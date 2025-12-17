@@ -8,10 +8,16 @@ function interactive_mode_loop()
         choice = MODE_OPTIONS[menu |> App |> play]
 
         if choice == "Specific Shapes"
+            println(@blue "Specific Shapes")
+
             specific_shapes_loop()
         elseif choice == "Optimizations"
+            println(@blue "Optimizations")
+
             optimizations_loop()
         elseif choice == "Exit"
+            println(@blue "Exit")
+
             println(@green "Exiting aisc-wshape. Goodbye!")
             break
         end

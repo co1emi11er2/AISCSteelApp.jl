@@ -12,6 +12,7 @@ const MODE_OPTIONS = ["Specific Shapes", "Optimizations", "Exit"]
 const CAPACITY_OPTIONS = ["Flexure", "Compression", "Go Back"]
 
 include("Modes/modes.jl")
+include("precompile.jl")
 
 function _print_usage(io::IO=stdout)
     println(io, "aisc-wshape - calculate capacities of a rolled wshape member")
