@@ -5,11 +5,15 @@ authors = ["Cole Miller"]
 
 [deps]
 AISCSteel = "599de4a1-440e-403d-8b33-ce14758023a2"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+PrettyTables = "08abe8d2-0d0c-5749-adfa-8a2ac140af0d"
 REPL = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
 StructuralUnits = "ec81c399-378c-4a82-baa1-80fb2fc85b6c"
 Term = "22787eb5-b846-44ae-b979-8e399b8463ab"
 
 [compat]
+DataFrames = "1.8.1"
+PrettyTables = "3.1.2"
 REPL = "1.11.0"
 Term = "2.0.7"
 julia = "1.10"

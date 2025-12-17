@@ -2,7 +2,7 @@
 
 julia_version = "1.12.3"
 manifest_format = "2.0"
-project_hash = "1ba90620a66c64ec2b7704faab7e4daabf1ad49c"
+project_hash = "138c8c3fdae17636465c013b11211c03d63cde36"
 
 [[deps.AISCSteel]]
 deps = ["CSV", "DataFramesMeta", "EnumX", "StructuralUnits"]
@@ -11,7 +11,7 @@ uuid = "599de4a1-440e-403d-8b33-ce14758023a2"
 version = "0.2.9"
 
 [[deps.AISCSteelApp]]
-deps = ["AISCSteel", "REPL", "StructuralUnits"]
+deps = ["AISCSteel", "DataFrames", "REPL", "StructuralUnits", "Term"]
 path = "."
 uuid = "a6477830-b1ab-4a64-8ec9-bbe134bddcba"
 version = "1.0.0-DEV"
