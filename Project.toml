@@ -1,10 +1,21 @@
 name = "AISCSteelApp"
 uuid = "a6477830-b1ab-4a64-8ec9-bbe134bddcba"
-authors = ["Cole Miller"]
 version = "1.0.0-DEV"
+authors = ["Cole Miller"]
+
+[deps]
+AISCSteel = "599de4a1-440e-403d-8b33-ce14758023a2"
+REPL = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
+StructuralUnits = "ec81c399-378c-4a82-baa1-80fb2fc85b6c"
+Term = "22787eb5-b846-44ae-b979-8e399b8463ab"
 
 [compat]
+REPL = "1.11.0"
+Term = "2.0.7"
 julia = "1.10"
+
+[apps.aisc-wshape]
+submodule = "WShape"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
