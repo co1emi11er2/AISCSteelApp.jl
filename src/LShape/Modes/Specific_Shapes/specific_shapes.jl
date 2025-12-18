@@ -19,7 +19,7 @@ function specific_shapes_loop(; io::IO=stdout)
 
             print(io, @blue "Restraint Type (fully_restrained, unrestrained, or at_max_moment_only): ")
             restraint_type_input = readline()
-            restraint_type = parse(Symbol, restraint_type_input)*ft
+            restraint_type = Symbol(restraint_type_input)
 
             print(io, @blue "Bending Direction (+x, -x, +y, -y): ")
             bending_direction = readline()
@@ -39,7 +39,7 @@ function specific_shapes_loop(; io::IO=stdout)
             else
                 print(io, @blue "Leg that is connected (short, long): ")
                 leg_connected_input = readline()
-                leg_connected = parse(Symbol, leg_connected_input)
+                leg_connected = Symbol(leg_connected_input)
             end
 
             _compression(lshape, L, leg_connected; io)

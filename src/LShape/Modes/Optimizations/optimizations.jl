@@ -31,7 +31,7 @@ function optimizations_loop(; io::IO=stdout)
             # restraint type
             print(io, @blue "Restraint Type (fully_restrained, unrestrained, or at_max_moment_only): ")
             restraint_type_input = readline()
-            restraint_type = parse(Symbol, restraint_type_input)*ft
+            restraint_type = Symbol(restraint_type_input)
 
             # number of lightest shapes to display
             print(io, @blue "Number of lightest shapes to display: ")
@@ -54,7 +54,7 @@ function optimizations_loop(; io::IO=stdout)
             else
                 print(io, @blue "Leg that is connected (short, long): ")
                 leg_connected_input = readline()
-                leg_connected = parse(Symbol, leg_connected_input)
+                leg_connected = Symbol(leg_connected_input)
             end
 
             # compressive demand
