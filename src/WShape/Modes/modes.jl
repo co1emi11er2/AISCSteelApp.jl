@@ -4,7 +4,7 @@ include("Optimizations/optimizations.jl")
 function interactive_mode_loop()
     menu = SimpleMenu(MODE_OPTIONS; active_style="blue")
     while true
-        println(@yellow "Select Mode:")
+        println(@yellow "\nSelect Mode:")
         choice = MODE_OPTIONS[menu |> App |> play]
 
         if choice == "Specific Shapes"
@@ -18,7 +18,6 @@ function interactive_mode_loop()
         elseif choice == "Exit"
             println(@blue "Exit")
 
-            println(@green "Exiting aisc-wshape. Goodbye!")
             break
         end
     end

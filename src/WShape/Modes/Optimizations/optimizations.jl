@@ -35,7 +35,7 @@ function optimizations_loop(; io::IO=stdout)
             println(io, @yellow "Please provide the following inputs:")
 
             # unbraced length
-            print(io, @blue "Effective Length Lcx, Lcy (in feet)(e.g., 10, 20, 20): ")
+            print(io, @blue "Effective Length Lcx, Lcy (in feet)(e.g., 10, 20): ")
             Lc_input = readline()
             L_cx, L_cy = parse.(Float64, split(Lc_input, ','))*ft
 
