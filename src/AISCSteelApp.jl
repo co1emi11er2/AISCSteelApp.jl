@@ -5,7 +5,10 @@ using REPL.TerminalMenus
 using Term.LiveWidgets
 
 const SHAPE_OPTIONS = ["WShape", "LShape", "WTShape", "Exit"]
+
 include("WShape/WShape.jl")
+include("LShape/LShape.jl")
+
 
 function _print_usage(io::IO=stdout)
     println(io, "aisc-wshape - calculate capacities of a rolled wshape member")
@@ -52,7 +55,7 @@ function shapes_mode_loop()
         elseif choice == "LShape"
             println(@blue "LShape")
 
-            println("not implemented yet")
+            LShape.interactive_mode_loop()
         elseif choice == "WTShape"
             println(@blue "WTShape")
 
